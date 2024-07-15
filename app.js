@@ -137,4 +137,4 @@ setInterval(() => {
 
     slide[num].style.display = "block";
   }
-}, 5000);
+}, 50000);

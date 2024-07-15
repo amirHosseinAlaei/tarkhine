@@ -1,0 +1,55 @@
+@import url("./font.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.slide{
+    display: none;
+
+    animation: fade 1s;
+}
+.slide.active{
+    display: block;
+}
+
+.dots{
+    
+    border-radius: 96px 96px 0px 0px / 150px 150px 0px 0px;
+}
+
+.dot.active {
+    background-color: #417F56;
+}
+
+
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity:10
+      ;
+    }
+  }
+
+  
+  .blue-border {
+    border-color: blue !important; /* تغییر رنگ مرز به آبی */
+}
+
+
+/* مخفی کردن نوار اسکرول برای Chrome, Safari و Opera */
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+/* مخفی کردن نوار اسکرول برای IE, Edge و Firefox */
+.container-snap {
+  -ms-overflow-style: none; /* برای IE و Edge */
+  scrollbar-width: none; /* برای Firefox */
+}
+
+

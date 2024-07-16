@@ -453,7 +453,7 @@
       </div>
     </section>
     <!-- *slider deksto... -->
-    <div class="slider w-full bg-black 2xl:container relative">
+    <div class="slider w-full bg-black 2xl:w-[1536px] mx-auto relative">
       <!-- slide-1 -->
       <div class="slide active">
         <img class="hidden md:block" src="/assets/images/Slider0.png" alt="" />
@@ -594,26 +594,25 @@
 
       <div
         dir="ltr"
-        class="dots text-right bg-white -translate-y-1.5 -translate-x-1/2 left-1/2 p-6 2xl:-my-1.5 -mt-6 gap-4 justify-center absolute top-full w-40 h-8 items-center flex"
+        class="dots 2xl:-mt-4 text-right bg-white -translate-y-1.5 -translate-x-1/2 left-1/2 p-6 2xl:-my-1.5 -mt-6 gap-4 justify-center absolute top-full w-40 h-8 items-center flex"
       >
         <span
-          class="dot active w-5 h-5 rounded-full bg-neutral-400 inline-block"
+          class="dot active w-5 h-5  bg-neutral-400 inline-block"
         ></span>
 
         <span
-          class="dot w-5 h-5 rounded-full bg-neutral-400 inline-block"
+          class="dot w-5 h-5  bg-neutral-400 inline-block"
         ></span>
         <span
-          class="dot w-5 h-5 rounded-full bg-neutral-400 inline-block"
+          class="dot w-5 h-5  bg-neutral-400 inline-block"
         ></span>
       </div>
     </div>
+    
     <!--! search box moile  -->
-
     <h2
-      class="text-base 2xl:mt-12 mt-10 2xl:container sm:text-lg md:text-2xl text-center md:font-semibold text-[#353535]"
-    >
-      منوی رستوران
+      class="text-base 2xl:mt-10  mt-10 2xl:container sm:text-lg md:text-2xl text-center md:font-semibold text-[#353535]"  >
+     منوی رستوران
     </h2>
 
     <form class="relative px-5 mt-6 md:hidden">
@@ -644,9 +643,16 @@
         </svg>
       </button>
     </form>
+    
+    <!-- menu-girid -->
+    <div class="grid grid-cols-2  mt-8 md:grid-cols-2 gap-4">
+      <div class="bg-blue-500 p-6">ستون 1</div>
+      <div class="bg-red-500 p-6">ستون 2</div>
+      <div class="bg-green-500 p-6">ستون 3</div>
+      <div class="bg-yellow-500 p-6">ستون 4</div>
+    </div>
+    
 
     <script src="/app.js"></script>
-
-
   </body>
 </html>

@@ -50,19 +50,9 @@ height: 5px;
 }
 
 
-/* مخفی کردن نوار اسکرول برای Chrome, Safari و Opera */
-.container-snap::-webkit-scrollbar {
-  display: none;
-}
-
-/* مخفی کردن نوار اسکرول برای IE, Edge و Firefox */
-.container-snap {
-  -ms-overflow-style: none; /* برای IE و Edge */
-  scrollbar-width: none; /* برای Firefox */
-}
-
 .slide-down-and-center {
   animation: slideDownAndCenter 2s ease-in-out forwards;
+  
 }
 
 @keyframes slideDownAndCenter {
@@ -73,7 +63,3 @@ height: 5px;
     transform: translateY(1) translateX(-50%);
   }
 }
-
-
-
-

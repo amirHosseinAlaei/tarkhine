@@ -399,6 +399,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bottom-0{
   bottom: 0px;
 }
+.top-1{
+  top: 0.25rem;
+}
+.left-5{
+  left: 1.25rem;
+}
+.left-3{
+  left: 0.75rem;
+}
+.left-4{
+  left: 1rem;
+}
+.left-12{
+  left: 3rem;
+}
+.left-14{
+  left: 3.5rem;
+}
 .z-50{
   z-index: 50;
 }
@@ -450,6 +468,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-20{
   margin-top: 5rem;
 }
+.mt-5{
+  margin-top: 1.25rem;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
+.mt-14{
+  margin-top: 3.5rem;
+}
+.mt-2{
+  margin-top: 0.5rem;
+}
+.mt-1{
+  margin-top: 0.25rem;
+}
 .inline-block{
   display: inline-block;
 }
@@ -482,6 +515,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-\[150px\]{
   height: 150px;
+}
+.h-full{
+  height: 100%;
+}
+.h-1\/2{
+  height: 50%;
+}
+.h-\[44px\]{
+  height: 44px;
 }
 .w-28{
   width: 7rem;
@@ -516,6 +558,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[200px\]{
   width: 200px;
 }
+.w-\[192px\]{
+  width: 192px;
+}
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -548,6 +593,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col{
+  flex-direction: column;
 }
 .items-center{
   align-items: center;
@@ -622,6 +670,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-2{
   padding: 0.5rem;
 }
+.p-4{
+  padding: 1rem;
+}
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -654,6 +705,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -681,8 +736,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-bold{
   font-weight: 700;
+}
+.leading-relaxed{
+  line-height: 1.625;
 }
 .text-\[\#717171\]{
   --tw-text-opacity: 1;
@@ -719,6 +781,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-neutral-500{
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline{
   -webkit-text-decoration-line: underline;
@@ -817,20 +883,10 @@ height: 5px;
 }
 
 
-/* مخفی کردن نوار اسکرول برای Chrome, Safari و Opera */
-.container-snap::-webkit-scrollbar {
-  display: none;
-}
-
-/* مخفی کردن نوار اسکرول برای IE, Edge و Firefox */
-.container-snap {
-  -ms-overflow-style: none; /* برای IE و Edge */
-  scrollbar-width: none; /* برای Firefox */
-}
-
 .slide-down-and-center {
   -webkit-animation: slideDownAndCenter 2s ease-in-out forwards;
           animation: slideDownAndCenter 2s ease-in-out forwards;
+  
 }
 
 @-webkit-keyframes slideDownAndCenter {
@@ -1069,7 +1125,3 @@ height: 5px;
     width: 200px;
   }
 }
-
-
-
-

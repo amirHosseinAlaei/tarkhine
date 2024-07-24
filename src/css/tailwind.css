@@ -64,6 +64,30 @@ height: 5px;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  
+.branche-1:hover  .bracnhe-img {
+
+  width:  100%;
+  height: 70% ;
+  
+  filter: brightness(50%);
+  transition: all 0.2s ease-in-out; /* Apply smooth transition */
+  
+  }
+
+  
+  
+.branche-1:hover  .branch {
+  margin-top: -2.5rem;
+ 
+   }
+  
+}
+
+
+
+
 
   @media screen and (min-width: 1280px) {
     .branche-1:hover .branch {
@@ -72,20 +96,12 @@ height: 5px;
 }
 
 
-@media screen and (min-width: 1024px) {
-  
-.branche-1:hover  .bracnhe-img {
 
-  width:  100%;
-  height: 70% ;
-  filter: brightness(50%);
-  transition: all 0.2s ease-in-out; /* Apply smooth transition */
-  
+
+
+
+@media screen and (min-width: 1536px) {
+  .branche-1:hover .branch {
+      margin-top: -3.5rem;
   }
-  
-  
-  .branche-1:hover  .branch {
-   margin-top: -2.5rem;
-  
-    }
 }

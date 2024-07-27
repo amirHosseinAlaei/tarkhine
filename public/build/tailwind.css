@@ -420,6 +420,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-2{
   right: 0.5rem;
 }
+.top-4{
+  top: 1rem;
+}
+.bottom-1{
+  bottom: 0.25rem;
+}
 .z-50{
   z-index: 50;
 }
@@ -500,6 +506,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .-mb-5{
   margin-bottom: -1.25rem;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 .inline-block{
   display: inline-block;
@@ -594,6 +603,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[190px\]{
   width: 190px;
 }
+.w-3\/4{
+  width: 75%;
+}
+.w-2\/4{
+  width: 50%;
+}
+.w-2\/6{
+  width: 33.333333%;
+}
+.w-1\/6{
+  width: 16.666667%;
+}
+.w-3\/6{
+  width: 50%;
+}
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -657,6 +681,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-7{
   gap: 1.75rem;
 }
+.gap-y-3{
+  row-gap: 0.75rem;
+}
 .rounded{
   border-radius: 0.25rem;
 }
@@ -690,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(65 127 86 / var(--tw-border-opacity));
 }
+.border-neutral-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity));
+}
 .bg-tint-1{
   --tw-bg-opacity: 1;
   background-color: rgb(229 242 233 / var(--tw-bg-opacity));
@@ -719,6 +750,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-\[\#cbcbcb95\]{
   background-color: #cbcbcb95;
+}
+.bg-transparent{
+  background-color: transparent;
 }
 .p-1{
   padding: 0.25rem;
@@ -771,17 +805,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 6rem;
   padding-right: 6rem;
 }
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .pl-10{
   padding-left: 2.5rem;
 }
 .pr-4{
   padding-right: 1rem;
 }
+.text-left{
+  text-align: left;
+}
 .text-center{
   text-align: center;
 }
 .text-right{
   text-align: right;
+}
+.align-text-top{
+  vertical-align: text-top;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -862,6 +910,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .underline-offset-8{
   text-underline-offset: 8px;
+}
+.placeholder-white::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+.placeholder-white:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+.placeholder-white::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1004,6 +1064,11 @@ height: 5px;
   border-color: rgb(65 127 86 / var(--tw-border-opacity));
 }
 
+.hover\:border-blue-500:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
 .hover\:bg-tint-3:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(176 215 189 / var(--tw-bg-opacity));
@@ -1022,6 +1087,11 @@ height: 5px;
 .hover\:bg-stone-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary-:hover{
@@ -1055,6 +1125,16 @@ height: 5px;
   border-color: rgb(65 127 86 / var(--tw-border-opacity));
 }
 
+.focus\:border-blue-600:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+
+.focus\:border-blue-500:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1086,6 +1166,9 @@ height: 5px;
   }
   .sm\:max-h-\[530px\]{
     max-height: 530px;
+  }
+  .sm\:gap-4{
+    gap: 1rem;
   }
   .sm\:gap-y-10{
     row-gap: 2.5rem;
@@ -1151,6 +1234,14 @@ height: 5px;
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .md\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
   .md\:text-\[20px\]{
     font-size: 20px;
@@ -1226,6 +1317,14 @@ height: 5px;
     border-top-left-radius: 0.125rem;
     border-top-right-radius: 0.125rem;
   }
+  .lg\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1241,23 +1340,8 @@ height: 5px;
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  .group:hover .lg\:group-hover\:mt-2{
-    margin-top: 0.5rem;
-  }
   .group:hover .lg\:group-hover\:-mt-2{
     margin-top: -0.5rem;
-  }
-  .group:hover .lg\:group-hover\:mt-4{
-    margin-top: 1rem;
-  }
-  .group:hover .lg\:group-hover\:mt-3{
-    margin-top: 0.75rem;
-  }
-  .group:hover .lg\:group-hover\:mt-1{
-    margin-top: 0.25rem;
-  }
-  .group:hover .lg\:group-hover\:-mt-1{
-    margin-top: -0.25rem;
   }
   .group:hover .lg\:group-hover\:block{
     display: block;
@@ -1278,6 +1362,9 @@ height: 5px;
   .xl\:-top-32{
     top: -8rem;
   }
+  .xl\:bottom-\[30px\]{
+    bottom: 30px;
+  }
   .xl\:m-10{
     margin: 2.5rem;
   }
@@ -1295,9 +1382,6 @@ height: 5px;
   }
   .xl\:mt-1{
     margin-top: 0.25rem;
-  }
-  .xl\:mt-20{
-    margin-top: 5rem;
   }
   .xl\:block{
     display: block;
@@ -1349,25 +1433,11 @@ height: 5px;
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  .group:hover .xl\:group-hover\:-mt-2{
-    margin-top: -0.5rem;
-  }
-  .group:hover .xl\:group-hover\:-mt-5{
-    margin-top: -1.25rem;
-  }
-  .group:hover .xl\:group-hover\:mt-5{
-    margin-top: 1.25rem;
-  }
   .group:hover .xl\:group-hover\:mt-2{
     margin-top: 0.5rem;
   }
   .group:hover .xl\:group-hover\:h-\[100\%\]{
     height: 100%;
-  }
-  @media (min-width: 1024px){
-    .group:hover .xl\:lg\:group-hover\:-mt-2{
-      margin-top: -0.5rem;
-    }
   }
 }
 

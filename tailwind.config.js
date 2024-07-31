@@ -8,6 +8,10 @@ module.exports = {
     },
     
     extend: {
+
+      screens: {
+        '3xl': '1620px', // اندازه جدید با عرض 1920px
+      },
      
       colors: {
         primary: {

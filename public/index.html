@@ -11,7 +11,7 @@
   <!-- !nawbar bar ==> mobile ==> menue -->
   <body class="">
     <!-- nawbar mobile -->
-    <section class="md:hidden flex justify-between items-center my-7 px-5">
+    <section class="md:hidden 3xl:container flex justify-between items-center my-7 px-5">
       <!-- menue -->
       <div>
         <button>
@@ -100,7 +100,7 @@
     </section>
     <!-- dekstopNawbar -->
     <section class="md:px-5 my-6 lg:px-216 xl:px-24">
-      <div class="2xl:container md:flex items-center hidden justify-between">
+      <div class="3xl:container md:flex items-center hidden justify-between">
         <!-- img -->
         <div class="w-[155px] h-[51px]">
           <img src="/assets/images/logodekstop.png" alt="" />
@@ -453,7 +453,7 @@
       </div>
     </section>
     <!-- *slider deksto... -->
-    <div class="slider w-full bg-black mx-auto relative">
+    <div class="slider w-full 3xl:container bg-black mx-auto relative">
       <!-- slide-1 -->
       <div class="slide active">
         <img class="hidden md:block" src="/assets/images/Slider0.png" alt="" />
@@ -603,7 +603,7 @@
       </div>
     </div>
     <!--! search box moile  -->
-    <form class="relative px-5 mt-6 md:hidden">
+    <form class=" relative px-5 mt-6 md:hidden">
       <input
         type="search"
         placeholder="جسجتجو"
@@ -887,7 +887,7 @@
       </div>
     </div>
     <!--  about dekstop -->
-    <div class="relative hidden lg:block mt-14 w-full h-full">
+    <div class="relative 3xl:container hidden lg:block mt-14 w-full h-full">
       <img src="/assets/images/about-dekstop.png" alt="عکس اصلی" class=" " />
       <div class="absolute top-1 w-1/2 h-1/2 text-white px-5 xl:px-24">
         <h4 class="xl:text-2xl lg:text-xl mt-5 xl:mt-12">
@@ -1138,7 +1138,7 @@
       </div>
     </div>
     <!-- branch -->
-    <div class="bg-white 2xl:container">
+    <div class="bg-white 3xl:container">
       <h4
         class="mt-5 md:mt-10 mb-4 md:mb-6 font-bold text-center text-[#353535] text-xl md:text-2xl"
       >
@@ -1557,7 +1557,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <div class="relative">
+    <div class="relative 3xl:container">
       <img class="lg:hidden" src="/assets/images/Footer.png" alt="" />
       <img
         class="hidden lg:block"
@@ -1693,7 +1693,6 @@
             </span>
           </div>
         </div>
-        <!-- fxddddddddddddddddddddddddddddddddddd -->
         <div
           class="flex sm:mt-5 gap-2 flex-col sm:gap-4 lg:px-0 px-20 md:px-40"
         >
@@ -1712,8 +1711,7 @@
           >
         </div>
         <!-- !send mesegess  -->
-        <div></div>
-        <div class="w-1/2 hidden lg:block mt-5">
+        <div class="  w-1/2 hidden lg:block mt-5">
           <p class="mb-2 text-2xl">پیام به ترخینه</p>
           <form class="flex" action="">
             <!-- right -->
@@ -1734,14 +1732,15 @@
               />
               <input
                 required
-                id="emailInput"
+                id="inputEmail"
                 type="email"
                 class="relative bg-transparent focus:border-blue-600 border-neutral-500 border rounded p-1 px-2 text-white focus:outline-none placeholder-white"
                 placeholder=""
               />
               <label
-                class="absolute gap-1 bottom-1 xl:bottom-[30px] px-2 items-center flex"
-                for="emailInput"
+              id="inputLabel"
+                class="absolute  gap-1 bottom-1 xl:bottom-[30px] px-2 items-center flex"
+                for="inputEmail"
               >
                 <span class="text-lg"> آدرس ایمیل </span
                 ><span class="text-sm"> (اختیاری) </span>
@@ -1770,6 +1769,12 @@
           </form>
         </div>
       </div>
+    </div>
+
+
+    <div class="bg-im">
+<div class="">asfasdfaasdasdasd</div>
+      
     </div>
 
     <script src="/app.js"></script>

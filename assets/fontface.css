@@ -1,0 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'kalame';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./font/TTF/Kalameh-Regular.ttf');
+    /* src: url('../src/font/_eot/KalamehWeb-Regular.eot?#iefix') format('embedded-opentype'),   */
+    /* url('../src/font/_woff2/KalamehWeb-Regular.woff2') format('woff2'),  */
+    /* url('../src/font/_woff/KalamehWeb-Regular.woff') format('woff'),  */
+    /* url('../src/font/ttf/Kalameh-Light.ttf') format('truetype'); */
+}
+
+    /* src: url('../src/font/TTF/Kalameh-Regular.ttf'); */
+
+
+* {
+    font-family: 'kalame';
+    user-select: none;
+}

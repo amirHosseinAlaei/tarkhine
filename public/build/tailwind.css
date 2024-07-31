@@ -603,21 +603,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[190px\]{
   width: 190px;
 }
-.w-3\/4{
-  width: 75%;
-}
-.w-2\/4{
-  width: 50%;
-}
-.w-2\/6{
-  width: 33.333333%;
-}
-.w-1\/6{
-  width: 16.666667%;
-}
-.w-3\/6{
-  width: 50%;
-}
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -819,17 +804,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pr-4{
   padding-right: 1rem;
 }
-.text-left{
-  text-align: left;
-}
 .text-center{
   text-align: center;
 }
 .text-right{
   text-align: right;
-}
-.align-text-top{
-  vertical-align: text-top;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -1044,6 +1023,10 @@ height: 5px;
   }
 }
 
+.bg-im{
+  background: url("/assets/images/Slider3.png") scroll center center;
+}
+
 .hover\:scale-125:hover{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1064,11 +1047,6 @@ height: 5px;
   border-color: rgb(65 127 86 / var(--tw-border-opacity));
 }
 
-.hover\:border-blue-500:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-
 .hover\:bg-tint-3:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(176 215 189 / var(--tw-bg-opacity));
@@ -1087,11 +1065,6 @@ height: 5px;
 .hover\:bg-stone-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary-:hover{
@@ -1128,11 +1101,6 @@ height: 5px;
 .focus\:border-blue-600:focus{
   --tw-border-opacity: 1;
   border-color: rgb(37 99 235 / var(--tw-border-opacity));
-}
-
-.focus\:border-blue-500:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus{
@@ -1474,6 +1442,11 @@ height: 5px;
       max-width: 1536px;
     }
   }
+  @media (min-width: 1620px){
+    .\32xl\:container{
+      max-width: 1620px;
+    }
+  }
   .\32xl\:-my-1\.5{
     margin-top: -0.375rem;
     margin-bottom: -0.375rem;
@@ -1507,3 +1480,42 @@ height: 5px;
   }
 }
 
+@media (min-width: 1620px){
+  .\33xl\:container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  @media (min-width: 640px){
+    .\33xl\:container{
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px){
+    .\33xl\:container{
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px){
+    .\33xl\:container{
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px){
+    .\33xl\:container{
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px){
+    .\33xl\:container{
+      max-width: 1536px;
+    }
+  }
+  @media (min-width: 1620px){
+    .\33xl\:container{
+      max-width: 1620px;
+    }
+  }
+}

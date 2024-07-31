@@ -139,3 +139,19 @@ setInterval(() => {
   }
 }, 500000);
 
+const  inputEmail = document.getElementById("inputEmail")
+
+const  inputLabel = document.getElementById("inputLabel")
+
+inputEmail.addEventListener("input",  (e) =>{
+
+if (e.target.value==="".trim() ) {
+  inputLabel.style.display="block"
+  
+}else{
+inputLabel.style.display="none"
+
+}
+
+
+})

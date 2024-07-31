@@ -1,22 +1,24 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 @font-face {
-    font-family: "Yekan";
+    font-family: 'kalame';
     font-style: normal;
-    src: url(/assets/fonts/yekan/BYekan+.ttf);
+    font-weight: 900;
+    src: url('../../assets/font/Kalameh-black.ttf');
+}
+@font-face {
+    font-family: 'kalame';
+    font-style: normal;
     font-weight: normal;
-    font-style: normal;
+    src: url('../../assets/font/Kalameh-Regular.ttf');
 }
 
-@font-face {
-    font-family: "Yekan";
-    font-style: normal;
-    src: url(/assets/fonts/yekan/BYekan+\ Bold.ttf );
-    font-weight: bold;
-    font-style: normal;
+* {
+    font-family: 'kalame';
+    user-select: none;
 }
-
-body  
-button{
-    font-family: "Yekan";
-}
-
-

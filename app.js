@@ -5,18 +5,30 @@
 const ShowModalBtnBranchBtn = document.querySelector(".ModalBtnBranchBtn");
 const modalBranch = document.querySelector(".modalBranch");
 
-ShowModalBtnBranchBtn.addEventListener("click", () =>
+ShowModalBtnBranchBtn.addEventListener("click", function(event) {
+  event.stopPropagation(); // جلوگیری از پخش رویداد به عناصر بالادستی
   modalBranch.classList.contains("hidden")
     ? modalBranch.classList.remove("hidden")
-    : modalBranch.classList.add("hidden")
-);
+    : modalBranch.classList.add("hidden");
+});
+
+document.addEventListener("click", function(event) {
+  var isClickInside = modalBranch.contains(event.target);
+  if (!isClickInside && !modalBranch.classList.contains("hidden")) {
+    modalBranch.classList.add("hidden");
+  }
+});
+
+
+
 
 // menu
 
 const ShowModalBtnMenu = document.querySelector(".ModalBtnMenu");
 const modalMenu = document.querySelector(".modalMenu");
 
-ShowModalBtnMenu.addEventListener("click", () => {
+ShowModalBtnMenu.addEventListener("click", function(event) {
+  event.stopPropagation(); // جلوگیری از پخش رویداد به عناصر بالادستی
   if (modalMenu.classList.contains("hidden")) {
     modalMenu.classList.remove("hidden");
   } else {
@@ -24,18 +36,34 @@ ShowModalBtnMenu.addEventListener("click", () => {
   }
 });
 
-// profileModal
+document.addEventListener("click", function(event) {
+  var isClickInside = modalMenu.contains(event.target);
+  if (!isClickInside && !modalMenu.classList.contains("hidden")) {
+    modalMenu.classList.add("hidden");
+  }
+});
 
+
+// profileModal
 const showProfileBtn = document.querySelector(".profileBtn");
 const profileModal = document.querySelector(".profileModal");
 
-showProfileBtn.addEventListener("click", () => {
+showProfileBtn.addEventListener("click", function(event) {
+  event.stopPropagation(); // جلوگیری از پخش رویداد به عناصر بالادستی
   if (profileModal.classList.contains("hidden")) {
     profileModal.classList.remove("hidden");
   } else {
     profileModal.classList.add("hidden");
   }
 });
+
+document.addEventListener("click", function(event) {
+  var isClickInside = profileModal.contains(event.target);
+  if (!isClickInside && !profileModal.classList.contains("hidden")) {
+    profileModal.classList.add("hidden");
+  }
+});
+
 // ?mobile
 // hamburgerBox
 

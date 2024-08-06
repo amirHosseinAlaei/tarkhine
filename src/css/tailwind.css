@@ -25,11 +25,8 @@ border-radius: 100%;
 
 .dot.active {
     background-color: #417F56;
-border-radius: 20%;
-width: 20px;    
-height: 5px;
 
-}
+  }
 
 
 
@@ -66,4 +63,8 @@ height: 5px;
 
 .bg-im{
   background: url("/assets/images/Slider3.png") scroll center center;
+}
+
+.gt{
+  
 }

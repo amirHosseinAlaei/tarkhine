@@ -82,90 +82,72 @@ document.addEventListener("click", function(event) {
 //
 
 // *slider
+// انتخاب عناصر
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+const dots = document.querySelectorAll(".dot");
 
-const slide = document.querySelectorAll(".slide");
+let currentSlideIndex = 0;
+let isHovering = false;
 
-const next = document.querySelector(".next");
-
-const prev = document.querySelector(".prev");
-
-const dot = document.querySelectorAll(".dot");
-var num = 0;
-
-let isHover = false;
-
-next.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  num++;
-
-  slide.forEach((s) => {
-    s.style.display = "none";
+// تابع برای نمایش اسلاید فعلی و پنهان کردن بقیه
+const showSlide = (index) => {
+  slides.forEach((slide, idx) => {
+    slide.style.display = idx === index ? "block" : "none";
   });
+};
 
-  dot.forEach((s) => {
-    s.classList.remove("active");
+// تابع برای فعال/غیرفعال کردن نقاط
+const updateDots = (index) => {
+  dots.forEach((dot, idx) => {
+    dot.classList.toggle("active", idx === index);
   });
+};
 
-  if (num > slide.length - 1) {
-    num = 0;
-  }
-  dot[num].classList.add("active");
+// رویداد کلیک برای دکمه‌ی بعدی
+nextBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  currentSlideIndex++;
+  if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
 
-  slide[num].style.display = "block";
+  showSlide(currentSlideIndex);
+  updateDots(currentSlideIndex);
 });
 
-prev.addEventListener("click", (e) => {
-  e.preventDefault();
+// رویداد کلیک برای دکمه‌ی قبلی
+prevBtn.addEventListener("click", (e) => {
+  e.preventDefault()
 
-  num--;
+  currentSlideIndex--;
 
-  slide.forEach((s) => {
-    s.style.display = "none";
-  });
-  dot.forEach((s) => {
-    s.classList.remove("active");
-  });
+  if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
 
-  if (num < 0) {
-    num = slide.length - 1;
-  }
-  dot[num].classList.add("active");
-
-  slide[num].style.display = "block";
+  showSlide(currentSlideIndex);
+  updateDots(currentSlideIndex);
 });
 
-slide.forEach((w) => {
-  w.addEventListener("mouseover", () => {
-    isHover = true;
+// رویدادها برای hover روی اسلایدها
+slides.forEach((slide) => {
+  slide.addEventListener("mouseenter", () => {
+    isHovering = true;
+  });
 
-    w.addEventListener("mouseout", () => {
-      isHover = false;
-    });
+  slide.addEventListener("mouseleave", () => {
+    isHovering = false;
   });
 });
 
+// تایمر برای خودکار چرخش اسلایدها
 setInterval(() => {
-  if (isHover === false) {
-    num++;
+  if (!isHovering) {
+    currentSlideIndex++;
+    if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
 
-    slide.forEach((s) => {
-      s.style.display = "none";
-    });
-
-    if (num > slide.length - 1) {
-      num = 0;
-    }
-
-    dot.forEach((s) => {
-      s.classList.remove("active");
-    });
-
-    dot[num].classList.add("active");
-
-    slide[num].style.display = "block";
+    showSlide(currentSlideIndex);
+    updateDots(currentSlideIndex);
   }
-}, 500000);
+}, 5000); // زمان را به میلی‌ثانیه تنظیم کنید، مثلاً 5000 برای 5 ثانیه
 
 const  inputEmail = document.getElementById("inputEmail")
 

@@ -3,53 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+.slide {
+  display: none;
 
-
-.slide{
-    display: none;
-
-    animation: fade 1s;
+  animation: fade 1s;
 }
-.slide.active{
-    display: block;
+.slide.active {
+  display: block;
 }
 
-.dot{
-border-radius: 100%;    
-
+.dot {
+  border-radius: 100%;
 }
 
-.dots{
-    border-radius: 96px 96px 0px 0px / 150px 150px 0px 0px;
+.dots {
+  border-radius: 96px 96px 0px 0px / 150px 150px 0px 0px;
 }
 
 .dot.active {
-    background-color: #417F56;
-
-  }
-
-
-
-
-@keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    70% {
-      opacity:10
-      ;
-    }
-  }
-
-  
-  .blue-border {
-    border-color: blue !important; /* تغییر رنگ مرز به آبی */
+  background-color: #417f56;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 10;
+  }
+}
+
+.blue-border {
+  border-color: blue !important; /* تغییر رنگ مرز به آبی */
+}
 
 .slide-down-and-center {
   animation: slideDownAndCenter 2s ease-in-out forwards;
-  
 }
 
 @keyframes slideDownAndCenter {
@@ -61,10 +50,11 @@ border-radius: 100%;
   }
 }
 
-.bg-im{
-  background: url("/assets/images/Slider3.png") scroll center center;
-}
-
-.gt{
-  
+.bg-img {
+  background-image: url("/assets/images/about-dekstop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  background-attachment: ;
 }

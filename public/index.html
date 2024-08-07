@@ -165,7 +165,7 @@
               </div>
             </li>
             <li
-              class="ModalBtnMenu hover:text-primary- duration-300 hover:underline underline-offset-[10px]  decoration-primary-"
+              class="ModalBtnMenu hover:text-primary- duration-300 hover:underline underline-offset-[10px] decoration-primary-"
             >
               <button class="flex gap-2 items-center">
                 <div>منو</div>
@@ -215,7 +215,7 @@
             </div>
 
             <li
-              class="hover:text-primary- duration-300 hover:underline underline-offset-[10px]  decoration-primary-"
+              class="hover:text-primary- duration-300 hover:underline underline-offset-[10px] decoration-primary-"
             >
               <a href="#">درباره ما</a>
             </li>
@@ -588,7 +588,7 @@
 
       <div
         dir="ltr"
-        class="dots 2xl:-mt-4 text-right bg-white -translate-y-1.5 -translate-x-1/2 left-1/2 p-6 2xl:-my-1.5 -mt-4  lg:-mt-6 md:-mt-6 gap-4 justify-center absolute top-full w-40 h-8 items-center flex"
+        class="dots 2xl:-mt-4 text-right bg-white -translate-y-1.5 -translate-x-1/2 left-1/2 p-6 2xl:-my-1.5 -mt-4 lg:-mt-6 md:-mt-6 gap-4 justify-center absolute top-full w-40 h-8 items-center flex"
       >
         <span class="dot active w-5 h-5 bg-neutral-400 inline-block"></span>
 
@@ -634,6 +634,7 @@
     <div
       class="grid 2xl:container grid-cols-2 2xl:mb-20 px-2 sm:px-5 xl:px-24 xl:gap-6 mt-20 md:grid-cols-4 gap-4"
     >
+      <!-- primary fod -->
       <div class="rounded-lg relative lg:h-[170px] h-[150px] bg-primary-">
         <img
           class="absolute slide-down-and-center lg:w-[250px] w-[200px] top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-2/4"
@@ -645,103 +646,100 @@
         >
           غذای اصلی
         </button>
+        <!-- secondery fod -->
       </div>
       <div class="rounded-lg relative lg:h-[170px] h-[150px] bg-primary-">
         <img
           class="absolute lg:w-[250px] slide-down-and-center w-[200px] top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-2/4"
-          src="/assets/images/primaryFood-mobile.png"
+          src="/assets/images/primary2Food-mobile.png"
           alt=""
         />
 
         <button
           class="hover:bg-stone-200 duration-300 bg-slate-100 absolute 2xl:w-[200px] xl:w-[180px] xl:p-3 w-[155px] shadow-xl p-2 text-center bottom-0 translate-y-2/4 rounded left-1/2 transform -translate-x-1/2"
         >
-          غذای اصلی
+          پیش غذا
         </button>
       </div>
+      <!-- Dessert -->
       <div
         class="mt-20 md:mt-0 rounded-lg relative lg:h-[170px] h-[150px] bg-primary-"
       >
         <img
           class="absolute lg:w-[250px] slide-down-and-center w-[200px] top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-2/4"
-          src="/assets/images/primaryFood-mobile.png"
+          src="/assets/images/Dessert-mobile.png"
           alt=""
         />
 
         <button
           class="hover:bg-stone-200 duration-300 bg-slate-100 absolute 2xl:w-[200px] xl:w-[180px] xl:p-3 w-[155px] shadow-xl p-2 text-center bottom-0 translate-y-2/4 rounded left-1/2 transform -translate-x-1/2"
         >
-          غذای اصلی
+          دسر
         </button>
       </div>
+
+      <!-- drink -->
       <div
         class="mt-20 md:mt-0 rounded-lg relative lg:h-[170px] h-[150px] bg-primary-"
       >
         <img
-          class="absolute slide-down-and-center lg:w-[250px] w-[200px] top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-2/4"
-          src="/assets/images/primaryFood-mobile.png"
+          class="absolute slide-down-and-center lg:w-[250px] w-[200px] top-8 lg:top-3 left-1/2 transform -translate-x-1/2 -translate-y-2/4"
+          src="/assets/images/drink-mobile.png"
           alt=""
         />
 
         <button
           class="hover:bg-stone-200 duration-300 bg-slate-100 absolute 2xl:w-[200px] xl:w-[180px] xl:p-3 w-[155px] shadow-xl p-2 text-center bottom-0 translate-y-2/4 rounded left-1/2 transform -translate-x-1/2"
         >
-          غذای اصلی
+          نوشیدنی
         </button>
       </div>
     </div>
-    <!-- about mobile-->
-    <div class="relative lg:hidden mt-14 w-full h-full">
-      <img
-        src="/assets/images/Introduction.png"
-        alt="عکس اصلی"
-        class="w-full sm:max-h-[530px]"
-      />
-      <div class="absolute top-1 w-full h-1/2 text-white px-5">
-        <h4 class="text-xl mt-5">رستوران‌های زنجیره‌ای ترخینه</h4>
-        <p class="mt-5 text-base leading-relaxed">
-          مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار ماست
-          که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
-          رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر
-          پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور شان
-          شما عزیزان ارائه دهیم.
-        </p>
-        <div class="relative -top-1 sm:-top-1" dir="ltr">
-          <button
-            class="flex mt-3 items-center p-4 text-base border-2 text-white gap-1 text-center w-[192px] h-[44px] justify-center rounded"
-          >
-            <span>
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.4995 13.78C10.3729 13.78 10.2462 13.7333 10.1462 13.6333L5.79953 9.28668C5.09286 8.58001 5.09286 7.42001 5.79953 6.71335L10.1462 2.36668C10.3395 2.17335 10.6595 2.17335 10.8529 2.36668C11.0462 2.56001 11.0462 2.88001 10.8529 3.07335L6.5062 7.42001C6.1862 7.74001 6.1862 8.26001 6.5062 8.58001L10.8529 12.9267C11.0462 13.12 11.0462 13.44 10.8529 13.6333C10.7529 13.7267 10.6262 13.78 10.4995 13.78Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-            <span class="fas fa-plus">اطلاعات بیشتر</span>
-            <!-- Example icon from Font Awesome -->
-          </button>
+    <!-- !about -->
+    <section class="bg-img   mt-10">
+      <div class="  md:flex sm:px-5   text-white">
+        <!-- about text -->
+        <div class="px-5 h-full  w-full ">
+          <br />
+          <h4 class="-mt-3 md:mt-5 md:text-2xl text-base">رستوران‌های زنجیره‌ای ترخینه</h4>
+
+          <p class="text-sm leading-6 mt-3 md:text-xl">
+            مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار
+            ماست که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
+            رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم به این دلیل   که در محیطی اصیل بر
+            پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور
+            شان شما عزیزان ارائه دهیم.
+          </p>
+
+          <div dir="ltr" class="mt-2 lg:mt-5">
+            <button
+              class="gap-2 flex lg:text-base border-2 md:h-10 md:w-48 hover:border-stone-400 justify-center items-center text-center rounded-[4px] w-[152px] h-8"
+            >
+              <span
+                ><svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4995 13.78C10.3729 13.78 10.2462 13.7333 10.1462 13.6333L5.79953 9.28668C5.09286 8.58001 5.09286 7.42001 5.79953 6.71335L10.1462 2.36668C10.3395 2.17335 10.6595 2.17335 10.8529 2.36668C11.0462 2.56001 11.0462 2.88001 10.8529 3.07335L6.5062 7.42001C6.1862 7.74001 6.1862 8.26001 6.5062 8.58001L10.8529 12.9267C11.0462 13.12 11.0462 13.44 10.8529 13.6333C10.7529 13.7267 10.6262 13.78 10.4995 13.78Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="items-center text-center">اطلاعات بیشتر</span>
+              <span></span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-0 left-5 text-white h-1/2 w-full px-5">
-        <div class="flex justify-between mt-14 px-5 sm:px-10">
-          <div class="flex flex-col items-center mt-2">
-            <div class="sm:-mt-20">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <!-- SVG content here -->
-                <svg
+        <!-- about icon -->
+        <div class=" w-full md:text-lg  mt-10 md:mt-7 md:items-center md:justify-center md:flex md:flex-col md:h-full">
+          <div class="flex  md:gap-20  justify-between px-5">
+            <div class="flex  flex-col items-center mt-7">
+              <span class="mb-1"
+                ><svg class="md:w-11 md:h-11"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -757,21 +755,12 @@
                     fill="white"
                   />
                 </svg>
-              </svg>
+              </span>
+              <span>پرسنلی مجرب و حرفه ای</span>
             </div>
-            <span class="mt-1">پرسنلی مجرب و حرفه‌ای</span>
-          </div>
-          <div class="flex flex-col items-center sm:-mt-20">
-            <div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <!-- SVG content here -->
-                <svg
+            <div class="flex flex-col items-center mt-7">
+              <span class="mb-1"
+                ><svg class="md:w-11 md:h-11"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -787,23 +776,14 @@
                     fill="white"
                   />
                 </svg>
-              </svg>
+              </span>
+              <span>کیفیت بالای غذا ها</span>
             </div>
-            <span class="mt-1">کیفیت بالای غذاها</span>
           </div>
-        </div>
-        <div class="flex justify-between mt-5 px-5 sm:mt-0 sm:px-10">
-          <div class="flex flex-col items-center mt-2 sm:mt-7">
-            <div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <!-- SVG content here -->
-                <svg
+          <div class=" flex justify-between md:mt-10 md:gap-20 px-5">
+            <div class="flex flex-col items-center mt-7">
+              <span class="mt-1"
+                ><svg class="md:w-11 md:h-11"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -827,21 +807,12 @@
                     fill="white"
                   />
                 </svg>
-              </svg>
+              </span>
+              <span>محیطی دلنشین و آرام</span>
             </div>
-            <span class="mt-1">محیطی دلنشین و آرام</span>
-          </div>
-          <div class="flex flex-col items-center sm:mt-7 mt-2 absolute left-14">
-            <div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <!-- SVG content here -->
-                <svg
+            <div class="flex flex-col items-center mt-7">
+              <span class="mt-1"
+                ><svg class="md:w-11 md:h-11"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -873,264 +844,14 @@
                     fill="white"
                   />
                 </svg>
-              </svg>
+              </span>
+              <span>داشتن منوع متنوع</span>
             </div>
-            <span class="mt-1 sm:px-6">منوی متنوع</span>
           </div>
         </div>
       </div>
-    </div>
-    <!--  about dekstop -->
-    <div class="relative 3xl:container hidden lg:block mt-14 w-full h-full">
-      <img src="/assets/images/about-dekstop.png" alt="عکس اصلی" class=" " />
-      <div class="absolute top-1 w-1/2 h-1/2 text-white px-5 xl:px-24">
-        <h4 class="xl:text-2xl lg:text-xl mt-5 xl:mt-12">
-          رستوران‌های زنجیره‌ای ترخینه
-        </h4>
-        <p class="mt-5 xl:text-xl lg:text-lg leading-relaxed">
-          مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار ماست
-          که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
-          رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر
-          پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور شان
-          شما عزیزان ارائه دهیم.
-        </p>
-        <div class="relative -top-1 sm:-top-1" dir="ltr">
-          <button
-            class="flex mt-3 items-center p-2 text-base border-2 text-white gap-1 text-center w-[180px] h-[40px] justify-center rounded"
-          >
-            <span>
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.4995 13.78C10.3729 13.78 10.2462 13.7333 10.1462 13.6333L5.79953 9.28668C5.09286 8.58001 5.09286 7.42001 5.79953 6.71335L10.1462 2.36668C10.3395 2.17335 10.6595 2.17335 10.8529 2.36668C11.0462 2.56001 11.0462 2.88001 10.8529 3.07335L6.5062 7.42001C6.1862 7.74001 6.1862 8.26001 6.5062 8.58001L10.8529 12.9267C11.0462 13.12 11.0462 13.44 10.8529 13.6333C10.7529 13.7267 10.6262 13.78 10.4995 13.78Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-            <span class="fas fa-plus">اطلاعات بیشتر</span>
-            <!-- Example icon from Font Awesome -->
-          </button>
-        </div>
-      </div>
-      <!-- ! -->
-      <div class="absolute bottom-0 left-5 text-white h-1/2 w-1/2 px-24">
-        <div class="flex relative xl:-top-32 -top-24 justify-between">
-          <div class="flex flex-col items-center">
-            <div class="">
-              <svg
-                class="hidden xl:block"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24 25.5C17.66 25.5 12.5 20.34 12.5 14C12.5 7.66 17.66 2.5 24 2.5C30.34 2.5 35.5 7.66 35.5 14C35.5 20.34 30.34 25.5 24 25.5ZM24 5.5C19.32 5.5 15.5 9.32 15.5 14C15.5 18.68 19.32 22.5 24 22.5C28.68 22.5 32.5 18.68 32.5 14C32.5 9.32 28.68 5.5 24 5.5Z"
-                  fill="white"
-                />
-                <path
-                  d="M41.1803 45.5C40.3603 45.5 39.6803 44.82 39.6803 44C39.6803 37.1 32.6403 31.5 24.0003 31.5C15.3603 31.5 8.32031 37.1 8.32031 44C8.32031 44.82 7.64031 45.5 6.82031 45.5C6.00031 45.5 5.32031 44.82 5.32031 44C5.32031 35.46 13.7003 28.5 24.0003 28.5C34.3003 28.5 42.6803 35.46 42.6803 44C42.6803 44.82 42.0003 45.5 41.1803 45.5Z"
-                  fill="white"
-                />
-              </svg>
+    </section>
 
-              <svg
-                class="xl:hidden lg:block"
-                width="34"
-                height="34"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <span class="xl:text-lg text-base mt-2">پرسنلی مجرب و حرفه‌ای</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div>
-              <svg
-                class="hidden xl:block"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M44 45.5H10C5.86 45.5 2.5 42.14 2.5 38V4C2.5 3.18 3.18 2.5 4 2.5C4.82 2.5 5.5 3.18 5.5 4V38C5.5 40.48 7.52 42.5 10 42.5H44C44.82 42.5 45.5 43.18 45.5 44C45.5 44.82 44.82 45.5 44 45.5Z"
-                  fill="white"
-                />
-                <path
-                  d="M9.99964 35.5C9.65964 35.5 9.29964 35.38 9.01964 35.14C8.39964 34.6 8.31964 33.66 8.85964 33.02L18.0396 22.3C19.0396 21.14 20.4796 20.44 21.9996 20.38C23.5196 20.34 25.0196 20.9 26.0996 21.98L27.9996 23.88C28.4996 24.38 29.1396 24.62 29.8596 24.62C30.5596 24.6 31.1996 24.28 31.6596 23.74L40.8396 13.02C41.3796 12.4 42.3196 12.32 42.9596 12.86C43.5796 13.4 43.6596 14.34 43.1196 14.98L33.9396 25.7C32.9396 26.86 31.4996 27.56 29.9796 27.62C28.4396 27.66 26.9596 27.1 25.8796 26.02L23.9996 24.12C23.4996 23.62 22.8396 23.36 22.1396 23.38C21.4396 23.4 20.7996 23.72 20.3396 24.26L11.1596 34.98C10.8396 35.32 10.4196 35.5 9.99964 35.5Z"
-                  fill="white"
-                />
-              </svg>
-              <svg
-                class="xl:hidden"
-                width="34"
-                height="34"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22 22.75H5C2.93 22.75 1.25 21.07 1.25 19V2C1.25 1.59 1.59 1.25 2 1.25C2.41 1.25 2.75 1.59 2.75 2V19C2.75 20.24 3.76 21.25 5 21.25H22C22.41 21.25 22.75 21.59 22.75 22C22.75 22.41 22.41 22.75 22 22.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M4.99982 17.7499C4.82982 17.7499 4.64982 17.6899 4.50982 17.5699C4.19982 17.2999 4.15982 16.8299 4.42982 16.5099L9.01982 11.1499C9.51982 10.5699 10.2398 10.2199 10.9998 10.1899C11.7598 10.1699 12.5098 10.4499 13.0498 10.9899L13.9998 11.9399C14.2498 12.1899 14.5698 12.3099 14.9298 12.3099C15.2798 12.2999 15.5998 12.1399 15.8298 11.8699L20.4198 6.50994C20.6898 6.19994 21.1598 6.15994 21.4798 6.42994C21.7898 6.69994 21.8298 7.16994 21.5598 7.48994L16.9698 12.8499C16.4698 13.4299 15.7498 13.7799 14.9898 13.8099C14.2198 13.8299 13.4798 13.5499 12.9398 13.0099L11.9998 12.0599C11.7498 11.8099 11.4198 11.6799 11.0698 11.6899C10.7198 11.6999 10.3998 11.8599 10.1698 12.1299L5.57982 17.4899C5.41982 17.6599 5.20982 17.7499 4.99982 17.7499Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <span class="mt-3 text-base xl:text-lg">کیفیت بالای غذاها</span>
-          </div>
-        </div>
-        <div class="flex justify-between relative top-5 -mt-14 xl:-mt-20">
-          <div class="flex flex-col items-center">
-            <div>
-              <svg
-                class="hidden xl:block"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M35.1997 45.12H12.7997C9.15966 45.12 5.83966 42.3199 5.23966 38.7199L2.57969 22.8C2.15969 20.32 3.3597 17.14 5.3397 15.56L19.1997 4.45988C21.8797 2.29988 26.0997 2.3199 28.7997 4.4799L42.6596 15.56C44.6196 17.14 45.8197 20.32 45.4197 22.8L42.7597 38.7199C42.1597 42.2599 38.7797 45.12 35.1997 45.12ZM23.9797 5.8798C22.9197 5.8798 21.8597 6.19999 21.0797 6.81999L7.21964 17.9198C6.07964 18.8398 5.29965 20.88 5.53965 22.32L8.19968 38.2399C8.55968 40.3399 10.6597 42.12 12.7997 42.12H35.1997C37.3397 42.12 39.4397 40.3399 39.7997 38.2199L42.4597 22.3C42.6997 20.86 41.8997 18.7998 40.7797 17.8998L26.9197 6.81999C26.1197 6.19999 25.0597 5.8798 23.9797 5.8798Z"
-                  fill="white"
-                />
-                <path
-                  d="M28.2401 30.2599C27.8601 30.2599 27.5001 30.12 27.2001 29.84C25.2601 27.98 22.7401 27.98 20.7801 29.84C20.1801 30.42 19.2401 30.3999 18.6601 29.7999C18.0801 29.1999 18.1001 28.2598 18.7001 27.6798C21.8001 24.6998 26.1401 24.6998 29.2601 27.6798C29.8601 28.2598 29.8801 29.1999 29.3001 29.7999C29.0401 30.0999 28.6401 30.2599 28.2401 30.2599Z"
-                  fill="white"
-                />
-                <path
-                  d="M32.4797 26.0201C32.0997 26.0201 31.7198 25.8802 31.4398 25.6002C30.4998 24.6802 29.4398 23.94 28.3198 23.4C25.5198 22.06 22.4598 22.06 19.6798 23.4C18.5598 23.94 17.5198 24.6802 16.5598 25.6002C15.9798 26.1802 15.0198 26.1801 14.4398 25.5801C13.8598 24.9801 13.8798 24.04 14.4598 23.46C15.6398 22.3 16.9598 21.38 18.3798 20.7C21.9998 18.96 25.9997 18.96 29.5997 20.7C31.0197 21.38 32.3398 22.3 33.5198 23.46C34.1198 24.04 34.1197 24.9801 33.5397 25.5801C33.2597 25.8601 32.8797 26.0201 32.4797 26.0201Z"
-                  fill="white"
-                />
-                <path
-                  d="M24.0001 35C23.4801 35 22.9801 34.8 22.5801 34.42C21.8001 33.64 21.8001 32.3801 22.5801 31.6001C23.3601 30.8201 24.6401 30.8201 25.4201 31.6001C26.2001 32.3801 26.2001 33.64 25.4201 34.42C25.0201 34.8 24.5201 35 24.0001 35Z"
-                  fill="white"
-                />
-              </svg>
-
-              <svg
-                class="xl:hidden"
-                width="34"
-                height="34"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.5998 22.56H6.39983C4.57983 22.56 2.91983 21.1599 2.61983 19.3599L1.28984 11.4C1.07984 10.16 1.67985 8.56999 2.66985 7.77999L9.59984 2.22994C10.9398 1.14994 13.0498 1.15995 14.3998 2.23995L21.3298 7.77999C22.3098 8.56999 22.9098 10.16 22.7098 11.4L21.3798 19.3599C21.0798 21.1299 19.3898 22.56 17.5998 22.56ZM11.9898 2.9399C11.4598 2.9399 10.9298 3.09999 10.5398 3.40999L3.60982 8.95992C3.03982 9.41992 2.64982 10.44 2.76982 11.16L4.09984 19.12C4.27984 20.17 5.32983 21.06 6.39983 21.06H17.5998C18.6698 21.06 19.7198 20.1699 19.8998 19.1099L21.2298 11.15C21.3498 10.43 20.9499 9.39991 20.3899 8.94991L13.4598 3.40999C13.0598 3.09999 12.5298 2.9399 11.9898 2.9399Z"
-                  fill="white"
-                />
-                <path
-                  d="M14.1205 15.13C13.9305 15.13 13.7505 15.06 13.6005 14.92C12.6305 13.99 11.3706 13.99 10.3906 14.92C10.0906 15.21 9.62052 15.2 9.33052 14.9C9.04052 14.6 9.05054 14.1299 9.35054 13.8399C10.9005 12.3499 13.0705 12.3499 14.6305 13.8399C14.9305 14.1299 14.9405 14.6 14.6505 14.9C14.5205 15.05 14.3205 15.13 14.1205 15.13Z"
-                  fill="white"
-                />
-                <path
-                  d="M16.2404 13.01C16.0504 13.01 15.8604 12.9401 15.7204 12.8001C15.2504 12.3401 14.7204 11.97 14.1604 11.7C12.7604 11.03 11.2304 11.03 9.84037 11.7C9.28037 11.97 8.76037 12.3401 8.28037 12.8001C7.99037 13.0901 7.51037 13.0901 7.22037 12.7901C6.93037 12.4901 6.94038 12.02 7.23038 11.73C7.82038 11.15 8.48037 10.69 9.19037 10.35C11.0004 9.48001 13.0004 9.48001 14.8004 10.35C15.5104 10.69 16.1704 11.15 16.7604 11.73C17.0604 12.02 17.0604 12.4901 16.7704 12.7901C16.6304 12.9301 16.4404 13.01 16.2404 13.01Z"
-                  fill="white"
-                />
-                <path
-                  d="M12.0005 17.5C11.7405 17.5 11.4905 17.4 11.2905 17.21C10.9005 16.82 10.9005 16.1901 11.2905 15.8001C11.6805 15.4101 12.3205 15.4101 12.7105 15.8001C13.1005 16.1901 13.1005 16.82 12.7105 17.21C12.5105 17.4 12.2605 17.5 12.0005 17.5Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <span class="xl:text-xl text-base mt-3">محیطی دلنشین و آرام</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div>
-              <svg
-                class="hidden xl:block"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32.7599 45.5H6.47985C4.57985 45.5 2.81986 44.6201 1.67986 43.0801C0.519863 41.5201 0.179881 39.56 0.759881 37.7L9.17986 10.6399C9.93986 8.11989 12.2599 6.3999 14.8999 6.3999H39.4999C41.9199 6.3999 44.0999 7.84008 45.0199 10.0801C45.5199 11.2401 45.6199 12.5601 45.3199 13.8601L38.5799 40.9199C37.9399 43.6199 35.5399 45.5 32.7599 45.5ZM14.9199 9.41992C13.6199 9.41992 12.4399 10.28 12.0599 11.54L3.63989 38.6001C3.35989 39.5401 3.51987 40.5201 4.11987 41.3201C4.67987 42.0801 5.55987 42.52 6.49987 42.52H32.7799C34.1599 42.52 35.3599 41.58 35.6799 40.24L42.4199 13.1599C42.5799 12.4999 42.5399 11.84 42.2799 11.26C41.7999 10.12 40.7399 9.3999 39.5199 9.3999H14.9199V9.41992Z"
-                  fill="white"
-                />
-                <path
-                  d="M41.56 45.4999H32C31.18 45.4999 30.5 44.8199 30.5 43.9999C30.5 43.1799 31.18 42.4999 32 42.4999H41.56C42.38 42.4999 43.14 42.16 43.7 41.56C44.26 40.96 44.54 40.16 44.48 39.34L42.5 12.1C42.44 11.28 43.06 10.5599 43.88 10.4999C44.7 10.4599 45.42 11.0598 45.48 11.8798L47.46 39.1201C47.58 40.7601 47 42.4 45.88 43.6C44.78 44.82 43.2 45.4999 41.56 45.4999Z"
-                  fill="white"
-                />
-                <path
-                  d="M19.3595 14.2599C19.2395 14.2599 19.1195 14.2399 18.9995 14.2199C18.1995 14.0199 17.6996 13.2198 17.8996 12.3998L19.9795 3.75992C20.1795 2.95992 20.9795 2.45982 21.7995 2.65982C22.5995 2.85982 23.0996 3.65989 22.8996 4.47989L20.8196 13.12C20.6596 13.8 20.0395 14.2599 19.3595 14.2599Z"
-                  fill="white"
-                />
-                <path
-                  d="M32.7599 14.28C32.6599 14.28 32.5399 14.2799 32.4399 14.2399C31.6399 14.0599 31.1199 13.2599 31.2799 12.4599L33.1598 3.77997C33.3398 2.95997 34.1399 2.46006 34.9399 2.62006C35.7399 2.78006 36.2598 3.59985 36.0998 4.39985L34.2198 13.08C34.0798 13.8 33.4599 14.28 32.7599 14.28Z"
-                  fill="white"
-                />
-                <path
-                  d="M31.4004 25.5H15.4004C14.5804 25.5 13.9004 24.82 13.9004 24C13.9004 23.18 14.5804 22.5 15.4004 22.5H31.4004C32.2204 22.5 32.9004 23.18 32.9004 24C32.9004 24.82 32.2204 25.5 31.4004 25.5Z"
-                  fill="white"
-                />
-                <path
-                  d="M29.4004 33.5H13.4004C12.5804 33.5 11.9004 32.82 11.9004 32C11.9004 31.18 12.5804 30.5 13.4004 30.5H29.4004C30.2204 30.5 30.9004 31.18 30.9004 32C30.9004 32.82 30.2204 33.5 29.4004 33.5Z"
-                  fill="white"
-                />
-              </svg>
-              <svg
-                class="xl:hidden"
-                width="34"
-                height="34"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.3799 22.75H3.23993C2.28993 22.75 1.40993 22.31 0.839932 21.54C0.259932 20.76 0.0899403 19.78 0.37994 18.85L4.58993 5.31995C4.96993 4.05995 6.12995 3.19995 7.44995 3.19995H19.7499C20.9599 3.19995 22.0499 3.92004 22.5099 5.04004C22.7599 5.62004 22.8099 6.28005 22.6599 6.93005L19.2899 20.46C18.9699 21.81 17.7699 22.75 16.3799 22.75ZM7.45993 4.70996C6.80993 4.70996 6.21993 5.14002 6.02993 5.77002L1.81994 19.3C1.67994 19.77 1.75993 20.26 2.05993 20.66C2.33993 21.04 2.77994 21.26 3.24994 21.26H16.3899C17.08 21.26 17.6799 20.79 17.8399 20.12L21.2099 6.57996C21.2899 6.24996 21.2699 5.92 21.1399 5.63C20.9 5.06 20.3699 4.69995 19.7599 4.69995H7.45993V4.70996Z"
-                  fill="white"
-                />
-                <path
-                  d="M20.78 22.75H16C15.59 22.75 15.25 22.41 15.25 22C15.25 21.59 15.59 21.25 16 21.25H20.78C21.19 21.25 21.57 21.08 21.85 20.78C22.13 20.48 22.27 20.08 22.24 19.67L21.25 6.05002C21.22 5.64002 21.53 5.27997 21.94 5.24997C22.35 5.22997 22.71 5.52991 22.74 5.93991L23.73 19.56C23.79 20.38 23.5 21.2 22.94 21.8C22.39 22.41 21.6 22.75 20.78 22.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M9.67977 7.12996C9.61977 7.12996 9.55977 7.11994 9.49977 7.10994C9.09977 7.00994 8.84979 6.6099 8.94979 6.1999L9.98976 1.87996C10.0898 1.47996 10.4898 1.22991 10.8998 1.32991C11.2998 1.42991 11.5498 1.82994 11.4498 2.23994L10.4098 6.56001C10.3298 6.90001 10.0198 7.12996 9.67977 7.12996Z"
-                  fill="white"
-                />
-                <path
-                  d="M16.3795 7.13999C16.3295 7.13999 16.2694 7.13997 16.2194 7.11997C15.8194 7.02997 15.5595 6.62995 15.6395 6.22995L16.5794 1.88999C16.6694 1.47999 17.0694 1.23003 17.4694 1.31003C17.8694 1.39003 18.1294 1.79992 18.0494 2.19992L17.1094 6.54001C17.0394 6.90001 16.7295 7.13999 16.3795 7.13999Z"
-                  fill="white"
-                />
-                <path
-                  d="M15.7002 12.75H7.7002C7.2902 12.75 6.9502 12.41 6.9502 12C6.9502 11.59 7.2902 11.25 7.7002 11.25H15.7002C16.1102 11.25 16.4502 11.59 16.4502 12C16.4502 12.41 16.1102 12.75 15.7002 12.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M14.7002 16.75H6.7002C6.2902 16.75 5.9502 16.41 5.9502 16C5.9502 15.59 6.2902 15.25 6.7002 15.25H14.7002C15.1102 15.25 15.4502 15.59 15.4502 16C15.4502 16.41 15.1102 16.75 14.7002 16.75Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <span class="m-3 text-lg">منوی متنوع</span>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- branch -->
     <div class="bg-white 3xl:container">
       <h4
@@ -1767,7 +1488,6 @@
       </div>
     </div>
 
-    <div class="bg-red-400">sf</div>
     <script src="/app.js"></script>
   </body>
 </html>

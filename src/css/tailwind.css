@@ -55,6 +55,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 420px;
-  background-attachment: ;
+  height: 450px;
+}
+
+
+.img-foter_mobile {
+  background-image: url("/assets/images/Footer.png");
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  height: 320px;
+width: 100%;
 }
